@@ -23,6 +23,11 @@
         <artifactId>jetty-servlet</artifactId>
         <version>${jetty.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>12.4.2.jre8</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
