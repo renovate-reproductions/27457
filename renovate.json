@@ -5,9 +5,14 @@
   ],
   "packageRules": [
     {
+      "matchPackagePatterns": ["*"],
+      "enabled": false
+    },
+    {
       "description": "Honor MSSQL JDBC compatibility tag",
       "matchDatasources": ["maven"],
       "matchPackageNames": ["com.microsoft.sqlserver:mssql-jdbc"],
+      "enabled": true,
       "versionCompatibility": "^(?<version>.*)(?<compatibility>\\.jre.*)$"
     }
   ]
